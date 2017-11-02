@@ -8,9 +8,30 @@
 @media(min-width: 725px)
     text-align: left
     padding-bottom: 0
-    height: 80vmin
-    min-height: 800px
+    height: 70vmin
+    min-height: 600px
 
 .hero-text
+  min-width: 100%
   @media(min-width: 725px)
-    margin-top: 10vmax
+    //margin-top: 10vmax
+    min-width: 50vmax
+    max-width: 50vmax
+
+
+// Displays hero image in correct position
+.hero-img
+  min-width: 30vmax
+  min-height: 70%
+
+  @media(min-width: 725px)
+    position: absolute
+    margin-left: -4em
+
+
+  @media(min-width: 1000px)
+    margin-left: 0
+
+.thickborder
+  background-color: $dark
+  min-height: 30px
