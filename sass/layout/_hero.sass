@@ -1,9 +1,16 @@
 .hero
-  background: $secondary
+  background-color: $dark
+  background: url(../img/stock.jpg)
+  background-size: cover
+  background-position: center
   color: $text-inverse
   padding-top: 8em
   padding-bottom: 8em
   text-align: center
+
+.darken
+  background-image: linear-gradient(0, 0, 0, 0.5)
+
 
 @media(min-width: 725px)
     text-align: left
@@ -11,16 +18,17 @@
     height: 70vmin
     min-height: 600px
 
+
+
+
 .hero-text
   min-width: 100%
   @media(min-width: 725px)
     //margin-top: 10vmax
-    min-width: 50vmax
-    max-width: 50vmax
 
 
 // Displays hero image in correct position
-.hero-img
+//.hero-img
   min-width: 30vmax
   min-height: 70%
 
@@ -35,3 +43,7 @@
 .thickborder
   background-color: $dark
   min-height: 30px
+
+.pageheader
+  background-color: $dark
+  min-height: 40%

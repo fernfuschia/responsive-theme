@@ -558,20 +558,21 @@ strong {
     margin: .75em 0; }
 
 .text-intro {
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   font-family: "Nunito";
   letter-spacing: .5px;
   font-weight: 300; }
 
 .main-header {
   position: absolute;
-  top: 0;
+  top: 0px;
   left: 0;
   right: 0;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  background-color: #444; }
 
 .logo {
   padding: 1em;
@@ -581,11 +582,20 @@ strong {
   color: white; }
 
 .hero {
-  background: #20d0c2;
+  background-color: #444;
+  background: url(../img/stock.jpg);
+  background-size: cover;
+  background-position: center;
   color: white;
   padding-top: 8em;
   padding-bottom: 8em;
   text-align: center; }
+
+.darken {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(0), color-stop(0), color-stop(0), to(0.5));
+  background-image: -webkit-linear-gradient(0, 0, 0, 0.5);
+  background-image: -o-linear-gradient(0, 0, 0, 0.5);
+  background-image: linear-gradient(0, 0, 0, 0.5); }
 
 @media (min-width: 725px) {
   text-align: left;
@@ -595,25 +605,14 @@ strong {
 
 .hero-text {
   min-width: 100%; }
-  @media (min-width: 725px) {
-    .hero-text {
-      min-width: 50vmax;
-      max-width: 50vmax; } }
-
-.hero-img {
-  min-width: 30vmax;
-  min-height: 70%; }
-  @media (min-width: 725px) {
-    .hero-img {
-      position: absolute;
-      margin-left: -4em; } }
-  @media (min-width: 1000px) {
-    .hero-img {
-      margin-left: 0; } }
 
 .thickborder {
   background-color: #444;
   min-height: 30px; }
+
+.pageheader {
+  background-color: #444;
+  min-height: 40%; }
 
 .main-nav {
   background-color: #fbb429;
